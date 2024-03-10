@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cce51nmlv3w3f"]
+
+[ext_resource type="PackedScene" uid="uid://dkur0katow0bc" path="res://player.tscn" id="1_lgf8v"]
+
+[node name="world" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_lgf8v")]
+position = Vector2(150, 95)
+input_pickable = true

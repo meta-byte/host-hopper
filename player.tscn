@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkur0katow0bc"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_7p2n0"]
+[ext_resource type="Texture2D" uid="uid://ce8nlrbomlj7i" path="res://Green Circle.png" id="1_hhqkv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2edgq"]
+radius = 7.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_7p2n0")
+MAX_SPEED = 120
+ACCELERATION = 1500
+FRICTION = 1000
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2edgq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hhqkv")
